@@ -10,24 +10,23 @@
     const users = [{id: 1, email: 'fernando@google.com'},{ id: 2, email: 'juan@google.com' }, { id: 3, email: 'melissa@google.com' }];
 
     // Listado de emails de los usuarios
-    const emailsUsers = users.map( user => user.email );
+    const usersEmails = users.map( user => user.email );
 
     // Variables booleanas de un video juego
     const canJump = false;
     const canRun = true;
-    const hasItems = true;
-    const isLoading = false;
+    const hasItems = false;
+    const isLoading = true;
 
     // Otros ejercicios
     // tiempo inicial
-    const startInitial = new Date().getTime();
+    const initialStartTime = new Date().getTime();
     //....
     // 3 doritos después
     //...
     // Tiempo al final
-    const TimeEnd = new Date().getTime() - startInitial;
-
-
+    const endTime = new Date().getTime() - initialStartTime;
+    
     // Funciones
     // Obtiene los libros
     function Getbooks() {
