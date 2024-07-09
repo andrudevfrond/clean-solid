@@ -5,6 +5,7 @@ class Product{
     constructor (
         public name: string = '',
         public price : number = 0,
+        public isStock: boolean = false,
         public size : Size = ''
     ){}
 
@@ -18,6 +19,6 @@ class Product{
 }
 
 (()=>{
-    const bluePants = new Product('Blue large pants', 10, 'L');
+    const bluePants = new Product('Blue large pants', 10,false,'L');
     console.log(bluePants.toString());
 })();
