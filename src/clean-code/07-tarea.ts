@@ -42,9 +42,9 @@
         public inputEvents     : InputEvents;
 
         constructor({value,placeholder,id}: InputElementProps){
-            this.htmlElement = new HtmlElement(id, 'input');
+            this.htmlElement     = new HtmlElement(id, 'input');
             this.inputAttributes = new InputAttributes(value, placeholder);
-            this.inputEvents = new InputEvents();
+            this.inputEvents     = new InputEvents();
         }
     }
 
