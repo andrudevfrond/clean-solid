@@ -12,27 +12,24 @@ interface RunBird{
 }
 
  class Tucan implements Bird, FlyBird {
-    public fly (){}
+    public fly (){return 100;}
     public eat(){}
-    public run(){}
     public swim(){}
  }
 
  class Huminbird implements Bird{
-    public fly (){}
+    public fly (){return 300;}
     public eat(){}
-    public run(){}
     public swim(){}
  }
 
-class Ostrich implements Bird {
-    public eat(){}
+class Ostrich implements Bird, RunBird {
     public run(){}
+    public eat(){}
     public swim(){}
 }
 
 class Penguin implements Bird {
     public eat(){}
-    public run(){}
     public swim(){}
 }
