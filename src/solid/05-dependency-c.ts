@@ -35,8 +35,8 @@ export class JsonDataBaseService implements PostProvider{
 
 export class ApiDataBaseService implements PostProvider{
     async getPosts(){
-        const data = fetch('https://jsonplaceholder.typicode.com/posts');
-        return (await data).json();
+        const data = await fetch('https://jsonplaceholder.typicode.com/posts');
+        return data.json();
     }
 }
 
