@@ -1,4 +1,4 @@
-import { PhotosService, PostService, TodoService } from './02-open-close-b';
+import { PhotosService, PostService, TodoService } from './02-ocp-b';
 
 (async () => {
 
